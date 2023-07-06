@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { SectionFeedback, TitleSection } from './Section.styled';
 
 const Section = ({ title, children }) => (
-    <section>
-        <h2>{title}</h2>
+    <SectionFeedback>
+        <TitleSection>{title}</TitleSection>
         {children}
-    </section>
+    </SectionFeedback>
 );
 
 export default Section;
